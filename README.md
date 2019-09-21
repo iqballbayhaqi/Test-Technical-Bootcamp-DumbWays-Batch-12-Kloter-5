@@ -17,4 +17,4 @@
 
 > Sebagian soal belum sempat saya kerjakan karena ada kendala dan juga waktu yang sudah tidak memungkinkan.
  
-> untuk Question 6 Belum sempat saya selesaikan seluruhnya.
+> untuk Question 5 Belum sempat saya selesaikan seluruhnya.
