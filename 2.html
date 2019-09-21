@@ -1,0 +1,17 @@
+<head>
+	<title>Question 2</title>
+</head>
+<body>
+	<p>Open the console on Inspect to see the results.</p>
+	<script>
+		const check = (dataKey, word) => {
+			const dataKeyy = dataKey;
+			let wordy = word;
+			console.log(dataKeyy[0], "=>", wordy.indexOf(dataKeyy[0]) !== -1);
+			console.log(dataKeyy[1], "=>", wordy.indexOf(dataKeyy[1]) !== -1);
+			console.log(dataKeyy[2], "=>", wordy.indexOf(dataKeyy[2]) !== -1);
+			console.log(dataKeyy[3], "=>", wordy.indexOf(dataKeyy[3]) !== -1);
+		}
+		check(["dumb", "ways", "the", "best"], "dumbways" );
+	</script>
+</body>

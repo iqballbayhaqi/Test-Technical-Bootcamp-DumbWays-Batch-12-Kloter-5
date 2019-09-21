@@ -1,0 +1,55 @@
+<head>
+	<title>Question 3</title>
+</head>
+<body>
+	<p>Open the console on Inspect to see the results.</p>
+	<script>
+		const hitungKembalian = (mustPay, funds) => {
+			const limaPuluhRibu = 50000;
+			const duaPuluhRibu = 20000;
+			const sepuluhRibu = 10000;
+			const limaRibu = 5000;
+			const duaRibu = 2000;
+			const limaRatus = 500;
+			const lengthOfLimaPuluhRibu = [];
+			const lengthOfDuaPuluhRibu = [];
+			const lengthOfSepuluhRibu = [];
+			const lengthOfLimaRibu = [];
+			const lengthOfDuaRibu = [];
+			const lengthOfLimaRatus = [];
+			
+			let change = funds - mustPay;
+			for (i=1;i <= funds; i++) {
+				if (limaPuluhRibu <= change) {
+					lengthOfLimaPuluhRibu.push(limaPuluhRibu);
+					console.log(lengthOfLimaPuluhRibu.length, "x", 50000);
+					change = change - limaPuluhRibu;
+				}else if (duaPuluhRibu <= change) {
+					lengthOfDuaPuluhRibu.push(duaPuluhRibu);
+					console.log(lengthOfDuaPuluhRibu.length, "x", 20000);
+					change = change - duaPuluhRibu;
+				}else if (sepuluhRibu <= change) {
+					lengthOfSepuluhRibu.push(sepuluhRibu);
+					console.log(lengthOfSepuluhRibu.length, "x", 10000);
+					change = change - sepuluhRibu;
+				}else if (limaRibu <= change) {
+					lengthOfLimaRibu.push(limaRibu);
+					console.log(lengthOfLimaRibu.length, "x", 5000);
+					change = change - limaRibu;
+				}else if (duaRibu <= change) {
+					lengthOfDuaRibu.push(duaRibu);
+					console.log(lengthOfDuaRibu.length, "x", 2000);
+					change = change - duaRibu;
+				}else if (limaRatus <= change) {
+					lengthOfLimaRatus.push(limaRatus);
+					console.log(lengthOfLimaRatus.length, "x", 500);
+					change = change - limaRatus;
+				}
+			}
+			
+			
+		}
+
+		hitungKembalian(110000, 200000);
+	</script>
+<body>

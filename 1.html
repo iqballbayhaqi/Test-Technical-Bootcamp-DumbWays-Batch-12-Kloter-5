@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Question 1</title>
+	</head>
+	<body>
+	<p>Open the console on Inspect to see the results.</p>
+	<script>
+		const generateSerial = () => {
+			'use strict';
+			let chars = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
+			serialLength = 16, randomSerial = "", i, randomNumber;
+			for (i=0;i<serialLength;i++) {
+				randomNumber = Math.floor(Math.random()*chars.length);
+				randomSerial += chars.substring(randomNumber,randomNumber + 1);
+			}
+			console.log(randomSerial.match(/.{1,4}/g).join("-"));
+		}
+		
+		const deployTheSerialNumber = () => {
+			for (j=1;j<=250;j++) {
+				generateSerial();
+			}
+		}
+		deployTheSerialNumber();
+	</script>
+	</body>
+	</body>
+</html>
